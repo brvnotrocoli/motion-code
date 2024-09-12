@@ -15,10 +15,10 @@
         <link rel="icon" href="./qrcode.png" type="image/x-icon">
 
         <link rel="stylesheet" href="engine/engine.css">
-        <script src="engine/js/aframe.1.6.0.min.js"></script>
-        <script src="engine/js/mindar-image-aframe.prod.1.2.5.js"></script>
-        <script src="engine/js/aframe-chromakey-material.min.js"></script>
-        <script src="engine/js/aframe-extras.min.js"></script>
+        <script src="engine/aframe.1.6.0.min.js"></script>
+        <script src="engine/mindar-image-aframe.prod.1.2.5.js"></script>
+        <script src="engine/aframe-chromakey-material.min.js"></script>
+        <script src="engine/aframe-extras.min.js"></script>
     </head>
 
     <body>
@@ -29,7 +29,7 @@
                 <h1>Vamos Começar?</h1>
 
                 <p>
-                    Posicione novamente esta câmera no <br> QR-Code para visualizar o conteúdo.
+                    Toque em começar e Posicione a câmera no <br> QR-Code para visualizar o conteúdo.
                 </p>
 
                 <button onclick="init()">
@@ -44,13 +44,13 @@
             <button onclick="go()">call to action</button>
         </div>
 
-        <a-scene mindar-image="imageTargetSrc: target.mind; filterMinCF: 0.001; filterBeta: 0.001; warmupTolerance: 1"
+        <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF: 0.001; filterBeta: 0.001; warmupTolerance: 1"
                  color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
                  device-orientation-permission-ui="enabled: false">
 
             <a-assets>
                 <video id="videoPlayer" loop="true" autoplay playsinline webkit-playsinline crossorigin="anonymous"
-                       muted="true" src="media/m-code.mp4">
+                       muted="true" src="motion.mp4">
                 </video>
             </a-assets>
 
