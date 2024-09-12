@@ -1,0 +1,99 @@
+<!-- ///////////////////////// M-CODE
+/////////////////////////////////////////////// -->
+<html lang="pt-br">
+
+    <head>
+        <!-- custom -->
+        <title>v0.7</title>
+        <meta name="theme-color" content="#222">
+        <link rel="stylesheet" href="design.css">
+
+        <!-- default engine -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="icon" href="./qrcode.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="engine/engine.css">
+        <script src="engine/js/aframe.1.6.0.min.js"></script>
+        <script src="engine/js/mindar-image-aframe.prod.1.2.5.js"></script>
+        <script src="engine/js/aframe-chromakey-material.min.js"></script>
+        <script src="engine/js/aframe-extras.min.js"></script>
+    </head>
+
+    <body>
+        <!-- ///////////////////////// SPLASH SCREEN
+/////////////////////////////////////////////// -->
+        <div class="splash-screen">
+            <div class="splash-screen-box">
+                <h1>Vamos Começar?</h1>
+
+                <p>
+                    Posicione novamente esta câmera no <br> QR-Code para visualizar o conteúdo.
+                </p>
+
+                <button onclick="init()">
+                    COMEÇAR A EXPERIÊNCIA AR
+                </button>
+            </div>
+        </div>
+
+        <!-- ///////////////////////// 01
+/////////////////////////////////////////////// -->
+        <div class="cta">
+            <button onclick="go()">call to action</button>
+        </div>
+
+        <a-scene mindar-image="imageTargetSrc: target.mind; filterMinCF: 0.001; filterBeta: 0.001; warmupTolerance: 1"
+                 color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+                 device-orientation-permission-ui="enabled: false">
+
+            <a-assets>
+                <video id="videoPlayer" loop="true" autoplay playsinline webkit-playsinline crossorigin="anonymous"
+                       muted="true" src="media/m-code.mp4">
+                </video>
+            </a-assets>
+
+            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+            <a-entity mindar-image-target="targetIndex: 0">
+                <a-video shader="chromakey" color="0.1 0.9 0.2" src="#videoPlayer" width="2" height="2" position="0 0 0"
+                         filter="blur(1px)">
+                </a-video>
+            </a-entity>
+        </a-scene>
+
+        <script type="text/javascript">
+
+            window.addEventListener('targetFound', function () {
+                var videoElement = document.getElementById("videoPlayer");
+                videoElement.play();
+            });
+
+            window.addEventListener('targetLost', function () {
+                var videoElement = document.getElementById("videoPlayer");
+                videoElement.load();
+            });
+
+            function init() {
+
+    const splashScreenBox = document.querySelector(".splash-screen-box");
+    const splashScreen = document.querySelector(".splash-screen");
+    const cta = document.querySelector(".cta");
+
+    splashScreenBox.classList.add("slide-up");
+
+    setTimeout(() => {
+        splashScreen.classList.add("fade-out");
+    }, 600); 
+
+    cta.classList.add("fade-in");
+}
+
+            function go(){
+                alert("Redirecionamento para onde preferir...");
+            }
+        </script>
+    </body>
+
+</html>
