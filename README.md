@@ -5,8 +5,8 @@
 AR CAM with support for .mp4 video in chroma key, derived from <a href="https://github.com/hiukim/mind-ar-js">MindAR.js</a>
 
 ## How it works
-- Scan the qr code or open <a href="fuori-1.github.io/motion-code/">fuori-1.github.io/motion-code</a> in your mobile phone 
-- Scan the qr code on top.
+- Scan the QR Code or open <a href="fuori-1.github.io/motion-code/">fuori-1.github.io/motion-code</a> in your mobile phone.
+- Scan the QR Code above to see the magic..
 
 #### Image Target Compiler
 https://hiukim.github.io/mind-ar-js-doc/tools/compile
