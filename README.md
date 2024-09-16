@@ -1,8 +1,9 @@
 <img src="./qrcode.png" width="180">
 
-# M-CODE
+# Motion Code
 
-AR CAM with support for .mp4 video in chroma key, derived from <a href="https://github.com/hiukim/mind-ar-js">MindAR.js</a>
+AR CAM with support for .mp4 video in chroma key, derived from <a href="https://github.com/hiukim/mind-ar-js">MindAR.js</a>.
+You can create motion graphics in After Effects or other animation software and display them in Augmented Reality.
 
 ## How it works
 - Scan the QR Code or open <a href="fuori-1.github.io/motion-code/">fuori-1.github.io/motion-code</a> in your mobile phone.
