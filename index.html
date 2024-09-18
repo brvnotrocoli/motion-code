@@ -4,9 +4,8 @@
 
 <head>
     <!-- custom -->
-    <title>v0.4</title>
+    <title>v0.5</title>
     <meta name="theme-color" content="#222">
-    <link rel="stylesheet" href="design.css">
 
     <!-- default engine -->
     <meta charset="UTF-8">
@@ -15,6 +14,7 @@
     <link rel="icon" href="./qrcode.png" type="image/x-icon">
 
     <link rel="stylesheet" href="engine/engine.css">
+    <link rel="stylesheet" href="design.css">
     <script src="engine/aframe.1.6.0.min.js"></script>
     <script src="engine/mindar-image-aframe.prod.1.2.5.js"></script>
     <script src="engine/aframe-chromakey-material.min.js"></script>
@@ -81,9 +81,8 @@
             const splashScreen = document.querySelector(".splash-screen");
             const cta = document.querySelector(".cta");
 
-            splashScreenBox.classList.add("slide-up");
-            splashScreen.classList.add("fade-out");
-            cta.classList.add("fade-in");
+            splashScreenBox.remove();
+            splashScreen.remove();
         }
 
         function go() {
