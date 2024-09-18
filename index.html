@@ -4,7 +4,7 @@
 
 <head>
     <!-- custom -->
-    <title>v0.7</title>
+    <title>v0.4</title>
     <meta name="theme-color" content="#222">
     <link rel="stylesheet" href="design.css">
 
@@ -82,17 +82,7 @@
             const cta = document.querySelector(".cta");
 
             splashScreenBox.classList.add("slide-up");
-
-            setTimeout(() => {
-                splashScreen.classList.add("fade-out");
-
-                setTimeout(() => {
-                    cta.style.display = "block";
-                    splashScreenBox.remove();
-                    splashScreen.remove();
-                }, 600);
-            }, 600);
-
+            splashScreen.classList.add("fade-out");
             cta.classList.add("fade-in");
         }
 
