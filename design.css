@@ -28,7 +28,7 @@ SPLASH SCREEN
 *********************************************/
 .splash-screen{
     position: fixed;
-    z-index: 98;
+    z-index: 97;
     width: 100%;
     height: 100%;
     background: url(splash-screen.jpg);
@@ -39,7 +39,7 @@ SPLASH SCREEN
 
 .splash-screen-box{
     position: absolute;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     height: 240px;
     background-color: rgba(0, 0, 0, .8);
@@ -103,7 +103,7 @@ CTA
 
 *********************************************/
 .cta button{
-    z-index: 97;
+    z-index: 99;
     position: fixed;
     bottom: 0;
     border: 0;
@@ -119,4 +119,5 @@ CTA
     font-size: 12px;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
+    display: none;
 }
