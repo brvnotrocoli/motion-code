@@ -58,7 +58,6 @@ MOTION
 
 .fade-in {
     animation: fadeIn 0.3s forwards;
-    display: block;
 }
 
 @keyframes fadeIn {
