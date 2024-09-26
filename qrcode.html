@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QR-Code Generator</title>
+    <meta name="theme-color" content="#222" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script type="text/javascript" src="engine/qrcode.min.js"></script>
+    <style>
+        .qrcode-dashboard {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qrcode-image img {
+            width: 200px;
+        }
+        .generator input {
+            width: 500px;
+            height: 60px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="qrcode-dashboard">
+        <div>
+        <div class="qrcode-image" id="qrcode"></div>
+
+        <div>
+            <h1>Create a QR-Code.</h1>
+            <form class="generator" id="qrForm">
+                <input type="text" id="linkInput" placeholder="your link" />
+                <br><br>
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        var qrcode = new QRCode("qrcode", {
+            text: "https://markett.online",
+            width: 2000,
+            height: 2000,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        document.getElementById("qrForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var link = document.getElementById("linkInput").value; 
+            qrcode.makeCode(link); 
+        });
+    </script>
+</body>
+</html>
