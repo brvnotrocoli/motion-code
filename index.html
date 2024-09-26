@@ -13,29 +13,33 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" href="./qrcode.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="engine/engine.css">
+    <link rel="stylesheet" href="engine/engine.css?update0001">
     <link rel="stylesheet" href="design.css">
     <script src="engine/js/aframe.1.6.0.min.js"></script>
     <script src="engine/js/mindar-image-aframe.prod.1.2.5.js"></script>
     <script src="engine/js/aframe-chromakey-material.min.js"></script>
     <script src="engine/js/aframe-extras.min.js"></script>
+    <script type="text/javascript">
+        function go() {
+            alert("Link para qualquer lugar");
+            // window.location.href = "https://markett.online";
+        }
+    </script>
 </head>
 
 <body>
     <!-- ///////////////////////// SPLASH SCREEN
 /////////////////////////////////////////////// -->
-    <div class="splash-screen">
-        <div class="splash-screen-box">
-            <h1>Vamos Começar?</h1>
+    <div class="splash-screen-box">
+        <h1>Vamos Começar?</h1>
 
-            <p>
-                Toque em começar e Posicione a câmera no <br> QR-Code para visualizar o conteúdo.
-            </p>
+        <p>
+            Toque em começar e Posicione a câmera no <br> QR-Code para visualizar o conteúdo.
+        </p>
 
-            <button onclick="init()">
-                COMEÇAR A EXPERIÊNCIA AR
-            </button>
-        </div>
+        <button onclick="init()">
+            COMEÇAR A EXPERIÊNCIA AR
+        </button>
     </div>
 
     <!-- ///////////////////////// 01
@@ -63,34 +67,9 @@
         </a-entity>
     </a-scene>
 
-    <script type="text/javascript">
-
-        window.addEventListener('targetFound', function () {
-            var videoElement = document.getElementById("videoPlayer");
-            videoElement.play();
-        });
-
-        window.addEventListener('targetLost', function () {
-            var videoElement = document.getElementById("videoPlayer");
-            videoElement.load();
-        });
-
-        function init() {
-
-            const splashScreenBox = document.querySelector(".splash-screen-box");
-            const splashScreen = document.querySelector(".splash-screen");
-            const cta = document.querySelector(".cta");
-
-            splashScreenBox.remove();
-            splashScreen.remove();
-        }
-
-        function go() {
-            alert("Link para qualquer lugar");
-            // window.location.href = "https://markett.online";
-        }
-
-    </script>
+        <!-- ///////////////////////// ENGINE
+/////////////////////////////////////////////// -->
+    <script type="text/javascript" src="engine/engine.js"></script>
 </body>
 
 </html>
