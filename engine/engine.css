@@ -116,16 +116,17 @@ CTA
 .cta{
     z-index: 99;
     position: fixed;
+    width: 100%;
     top: 0;
-    text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .cta button{
     border: 0;
     width: auto;
-    height: 60px;
+    height: auto;
     border-radius: 30px;
+    padding: 20px;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
