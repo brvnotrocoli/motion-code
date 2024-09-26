@@ -13,18 +13,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" href="./qrcode.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="engine/engine.css?update0002">
+    <link rel="stylesheet" href="engine/engine.css?update0003">
     <link rel="stylesheet" href="design.css">
     <script src="engine/js/aframe.1.6.0.min.js"></script>
     <script src="engine/js/mindar-image-aframe.prod.1.2.5.js"></script>
     <script src="engine/js/aframe-chromakey-material.min.js"></script>
     <script src="engine/js/aframe-extras.min.js"></script>
-    <script type="text/javascript">
-        function go() {
-            alert("Link para qualquer lugar");
-            // window.location.href = "https://markett.online";
-        }
-    </script>
 </head>
 
 <body>
@@ -42,12 +36,21 @@
         </button>
     </div>
 
-    <!-- ///////////////////////// 01
+    <!-- ///////////////////////// CALL TO ACTION
 /////////////////////////////////////////////// -->
     <div class="cta">
         <button onclick="go()">call to action</button>
     </div>
 
+    <script type="text/javascript">
+        function go() {
+            alert("Link para qualquer lugar");
+            // window.location.href = "https://markett.online";
+        }
+    </script>
+
+    <!-- ///////////////////////// SCENE
+/////////////////////////////////////////////// -->
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF: 0.001; filterBeta: 0.001; warmupTolerance: 1"
         color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false">
