@@ -17,7 +17,7 @@ You can create motion graphics in After Effects or other animation software and 
 ## Tools
 
 #### QR-Code Generator
-https://fuori-1.github.io/motion-code/qrcode
+https://fuori-1.github.io/motion-code/engine
 
 #### Image Target Compiler
 https://hiukim.github.io/mind-ar-js-doc/tools/compile

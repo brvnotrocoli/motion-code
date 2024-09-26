@@ -1,28 +1,5 @@
 /*********************************************
 
-ART
-
-*********************************************/
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    overflow-x: hidden !important;
-    background-color: #fff !important;
-}
-
-:root {
-    --color:   #FF6C6C;
-
-    --c1dark:  #1A1A1B;
-    --c1light: #A6A7B1;
-    --c2dark:  #3F3D56;
-    --c2light: #F1F1F1;
-}
-
-/*********************************************
-
 SPLASH SCREEN BOX
 
 *********************************************/
@@ -32,19 +9,19 @@ SPLASH SCREEN BOX
 }
 
 .splash-screen-box h1{
-    color: var(--c2light) !important;
+    color: #F1F1F1 !important;
 }
 .splash-screen-box p{
     color: white;
 }
 .splash-screen-box button{
-    background-color: var(--color);
-    color: var(--c2light);
+    background-color: #FF6C6C;
+    color: #F1F1F1;
     box-shadow: inset 0 -10px 10px rgba(0, 0, 0 , 0.3);
 }
 
 .splash-screen-box button:hover {
-    background-color: var(--c1light);
+    background-color: #A6A7B1;
 }
 
 /*********************************************
@@ -53,6 +30,6 @@ CTA
 
 *********************************************/
 .cta button{
-    background-color: var(--c1dark);
+    background-color: #1A1A1B;
     color: #F1F1F1;
 }
