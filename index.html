@@ -13,7 +13,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" href="./qrcode.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="engine/engine.css?update0003">
+    <link rel="stylesheet" href="engine/engine.css?update0004">
     <link rel="stylesheet" href="design.css">
     <script src="engine/js/aframe.1.6.0.min.js"></script>
     <script src="engine/js/mindar-image-aframe.prod.1.2.5.js"></script>
@@ -42,13 +42,6 @@
         <button onclick="go()">call to action</button>
     </div>
 
-    <script type="text/javascript">
-        function go() {
-            alert("Link para qualquer lugar");
-            // window.location.href = "https://markett.online";
-        }
-    </script>
-
     <!-- ///////////////////////// SCENE
 /////////////////////////////////////////////// -->
     <a-scene mindar-image="imageTargetSrc: targets.mind; filterMinCF: 0.001; filterBeta: 0.001; warmupTolerance: 1"
@@ -73,6 +66,12 @@
         <!-- ///////////////////////// ENGINE
 /////////////////////////////////////////////// -->
     <script type="text/javascript" src="engine/engine.js"></script>
+    <script type="text/javascript">
+        function go() {
+            alert("Link para qualquer lugar");
+            // window.location.href = "https://markett.online";
+        }
+    </script>
 </body>
 
 </html>

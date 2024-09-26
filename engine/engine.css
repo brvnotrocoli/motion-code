@@ -114,6 +114,7 @@ CTA
 
 *********************************************/
 .cta{
+    z-index: 99;
     position: fixed;
     top: 0;
     text-align: center;
@@ -121,9 +122,8 @@ CTA
 }
 
 .cta button{
-    z-index: 97;
     border: 0;
-    width: 90%;
+    width: auto;
     height: 60px;
     border-radius: 30px;
     cursor: pointer;
