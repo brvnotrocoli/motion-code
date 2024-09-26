@@ -16,39 +16,18 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 500;
-    overflow-x: hidden !important;
-    background-color: #fff !important;
 }
 
 .a-enter-vr-button {
     display: none !important;
 }
 
-/*********************************************
-
-ART
-
-*********************************************/
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
     overflow-x: hidden !important;
-    background-color: #fff !important;
-}
-
-:root {
-    --color:   #FF6C6C;
-
-    --c1dark:  #1A1A1B;
-    --c1light: #A6A7B1;
-    --c2dark:  #3F3D56;
-    --c2light: #F1F1F1;
 }
 
 /*********************************************
