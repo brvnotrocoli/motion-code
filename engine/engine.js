@@ -1,6 +1,9 @@
 window.addEventListener('targetFound', function () {
     var videoElement = document.getElementById("videoPlayer");
     videoElement.play();
+
+    const cta = document.querySelector(".cta");
+    cta.classList.add("show");
 });
 
 window.addEventListener('targetLost', function () {

@@ -119,6 +119,11 @@ CTA
     width: 100%;
     top: 0;
     padding: 20px;
+    transition: top 0.5s ease;
+}
+
+.cta.show {
+    top: 0;
 }
 
 .cta button{
