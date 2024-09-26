@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flash</title>
+        <meta name="theme-color" content="#222" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="flash.css" />
+    </head>
+    <body>
+        <section class="header">
+            <img src="header.png" />
+        </section>
+
+        <section class="content">
+            <h1 class="title">Seu melhor título aqui em destaque!</h1>
+            <div class="space10h"></div>
+            <p>
+                Adicione um texto informativo, para facilitar o entendimento de quem estará usando o QR-Code. Tente ser
+                objetivo em seu texto para ser acertivo em sua ação.
+            </p>
+            <div class="space30h"></div>
+
+            <small>Chave PIX</small>
+            <div class="pix-key">54.837.764/0001-65</div>
+        </section>
+        
+        <div class="space100h"></div>
+
+        <script type="text/javascript">
+            document.querySelector(".pix-key").addEventListener("click", function () {
+                const textToCopy = this.textContent;
+                navigator.clipboard
+                    .writeText(textToCopy)
+                    .then(() => {
+                        alert("Texto copiado: " + textToCopy);
+                    })
+                    .catch((err) => {
+                        console.error("Erro ao copiar: ", err);
+                    });
+            });
+        </script>
+    </body>
+</html>
