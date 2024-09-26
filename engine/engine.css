@@ -108,23 +108,20 @@ SPLASH SCREEN BOX
     font-size: 20px; 
 }
 
-.splash-screen-box button:hover {
-    background-color: var(--c1light);
-}
-
 /*********************************************
 
 CTA
 
 *********************************************/
 .cta{
+    position: fixed;
+    top: 0;
     text-align: center;
+    padding: 30px;
 }
 
 .cta button{
     z-index: 97;
-    position: fixed;
-    top: 30px;
     border: 0;
     width: 90%;
     height: 60px;
