@@ -7,11 +7,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+        <link rel="stylesheet" href="swiper/swiper-11.1.14.css" />
         <link rel="stylesheet" href="flash.css" />
+        <style>
+            .swiper {
+                width: 100%;
+                height: auto;
+            }
+            .swiper-slide img {
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        <section class="header">
-            <img src="header.png" />
+        <section class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://placehold.co/600x600" /></div>
+                <div class="swiper-slide"><img src="https://placehold.co/600x600" /></div>
+                <div class="swiper-slide"><img src="https://placehold.co/600x600" /></div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </section>
 
         <section class="content">
@@ -26,21 +43,10 @@
             <small>Chave PIX</small>
             <div class="pix-key">54.837.764/0001-65</div>
         </section>
-        
+
         <div class="space100h"></div>
 
-        <script type="text/javascript">
-            document.querySelector(".pix-key").addEventListener("click", function () {
-                const textToCopy = this.textContent;
-                navigator.clipboard
-                    .writeText(textToCopy)
-                    .then(() => {
-                        alert("Texto copiado: " + textToCopy);
-                    })
-                    .catch((err) => {
-                        console.error("Erro ao copiar: ", err);
-                    });
-            });
-        </script>
+        <script type="text/javascript" src="swiper/swiper-11.1.14.js"></script>
+        <script type="text/javascript" src="flash.js"></script>
     </body>
 </html>
