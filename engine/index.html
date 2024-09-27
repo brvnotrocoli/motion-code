@@ -23,21 +23,27 @@
             height: 60px;
             border-radius: 20px;
         }
+        .link-display {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <section class="qrcode-dashboard">
         <div>
-        <div class="qrcode-image" id="qrcode"></div>
+            <div class="qrcode-image" id="qrcode"></div>
+            <div class="link-display" id="linkDisplay"></div>
 
-        <div>
-            <h1>Create a QR-Code.</h1>
-            <form class="generator" id="qrForm">
-                <input type="text" id="linkInput" placeholder="your link" />
-                <br><br>
-                <button type="submit">Generate</button>
-            </form>
-        </div>
+            <div>
+                <h1>Create a QR-Code.</h1>
+                <form class="generator" id="qrForm">
+                    <input type="text" id="linkInput" placeholder="your link" />
+                    <br><br>
+                    <button type="submit">Generate</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -54,7 +60,10 @@
         document.getElementById("qrForm").addEventListener("submit", function(event) {
             event.preventDefault();
             var link = document.getElementById("linkInput").value; 
-            qrcode.makeCode(link); 
+            qrcode.makeCode(link);
+            
+            // Exibir o link gerado
+            document.getElementById("linkDisplay").innerText = "Link gerado: " + link;
         });
     </script>
 </body>
