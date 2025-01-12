@@ -6,7 +6,7 @@ AR CAM with support for .mp4 video in chroma key, derived from <a href="https://
 You can create motion graphics in After Effects or other animation software and display them in Augmented Reality.
 
 ## How it works
-- Scan the QR Code or open <a href="fuori-1.github.io/motion-code/">fuori-1.github.io/motion-code</a> in your mobile phone.
+- Scan the QR Code or open <a href="https://brvnotrocoli.github.io/motion-code/">brvnotrocoli.github.io/motion-code</a> in your mobile phone.
 - Scan the QR Code above to see the magic..
 
 ## Thanks
@@ -17,7 +17,7 @@ You can create motion graphics in After Effects or other animation software and 
 ## Tools
 
 #### QR-Code Generator
-https://fuori-1.github.io/motion-code/engine
+https://brvnotrocoli.github.io/motion-code/engine/
 
 #### Image Target Compiler
 https://hiukim.github.io/mind-ar-js-doc/tools/compile
